@@ -179,7 +179,7 @@ def run_the_app():
                 textL = "{}: {:.4f}".format(LABELS[classIDs[i]], confidences[i])
                 cv2.putText(image, textL, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
-        st.image(image, caption='Processed Image.', channels='BGR')
+        st.image(image, caption='Processed Image.', channels='BGR', use_column_width=True)
         end = time.time()
         st.write("Time took {:.6f} seconds".format(end - start))
 # External files to download.
