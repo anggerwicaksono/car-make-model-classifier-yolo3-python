@@ -5,13 +5,13 @@ import numpy as np
 import tensorflow.compat.v1 as tf   # TensorFlow 2.0
 import cv2
 import os
-import config
+import configC
 
-model_file = config.model_file
-label_file = config.label_file
-input_layer = config.input_layer
-output_layer = config.output_layer
-classifier_input_size = config.classifier_input_size
+model_file = configC.model_file
+label_file = configC.label_file
+input_layer = configC.input_layer
+output_layer = configC.output_layer
+classifier_input_size = configC.classifier_input_size
 
 def load_graph(model_file):
     graph = tf.Graph()
