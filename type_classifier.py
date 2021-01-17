@@ -2,19 +2,16 @@
 # Licensed under the MIT License
 
 import numpy as np
-import json
-#import tensorflow as tf
 import tensorflow.compat.v1 as tf
-from PIL import Image, ImageOps
 import cv2
 import io
-import config
+import configT
 
-model_file = config.model_file
-label_file = config.label_file
-input_layer = config.input_layer
-output_layer = config.output_layer
-classifier_input_size = config.classifier_input_size
+model_file = configT.model_file
+label_file = configT.label_file
+input_layer = configT.input_layer
+output_layer = configT.output_layer
+classifier_input_size = configT.classifier_input_size
 
 def load_graph(model_file):
   graph = tf.Graph()
