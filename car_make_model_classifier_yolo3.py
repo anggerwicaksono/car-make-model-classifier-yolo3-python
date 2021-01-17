@@ -167,13 +167,13 @@ def run_the_app():
                     confM = float(resultM[0]['prob'])
                     confT = float(resultT[0]['prob'])
                     if confC > con:
-                        textC = "{}: {:.4f}".format(resultC[0]['color'], confC))
+                        textC = "{}: {:.4f}".format(resultC[0]['color'], confC)
                         cv2.putText(image, textC, (x + 2, y + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
                     if confM > con:
-                        textM = "{}: {:.4f}".format(resultM[0]['brand'], confM))
+                        textM = "{}: {:.4f}".format(resultM[0]['brand'], confM)
                         cv2.putText(image, textM, (x + 2, y + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
                     if confT > con:
-                        textT = "{}: {:.4f}".format(resultT[0]['model'], confT))
+                        textT = "{}: {:.4f}".format(resultT[0]['model'], confT)
                         cv2.putText(image, textT, (x + 2, y + 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
                 cv2.rectangle(image, (x, y), (x + w, y + h), color, 2)
                 textL = "{}: {:.4f}".format(LABELS[classIDs[i]], confidences[i])
