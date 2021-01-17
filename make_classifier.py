@@ -15,7 +15,7 @@ class Classifier():
         self.interpreter = MNN.Interpreter("model-weights-spectrico-car-brand-recognition-mobilenet_v3-224x224-170620.mnn")
         self.session = self.interpreter.createSession()
         self.input_tensor = self.interpreter.getSessionInput(self.session)
-        self.labels = load_labels('labels.txt')
+        self.labels = load_labels('labelsM.txt')
 
     def predict(self, image):
         # change to rgb format
