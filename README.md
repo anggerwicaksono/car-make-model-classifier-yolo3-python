@@ -26,17 +26,7 @@ The YOLOv4 object detector is from: [https://github.com/AlexeyAB/darknet](https:
   year={2020}
 }
 ```
-The car make classifier is based on MobileNetV3 mobile architecture: [Searching for MobileNetV3](https://arxiv.org/abs/1905.02244)
-```
-@inproceedings{howard2019searching,
-  title={Searching for mobilenetv3},
-  author={Howard, Andrew and Sandler, Mark and Chu, Grace and Chen, Liang-Chieh and Chen, Bo and Tan, Mingxing and Wang, Weijun and Zhu, Yukun and Pang, Ruoming and Vasudevan, Vijay and others},
-  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
-  pages={1314--1324},
-  year={2019}
-}
-```
-The car color classifier is based on MobileNetV3 mobile architecture: [Searching for MobileNetV3](https://arxiv.org/abs/1905.02244)
+The car color and make classifier is based on MobileNetV3 mobile architecture: [Searching for MobileNetV3](https://arxiv.org/abs/1905.02244)
 ```
 @inproceedings{howard2019searching,
   title={Searching for mobilenetv3},
