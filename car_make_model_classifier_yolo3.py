@@ -162,7 +162,7 @@ def run_the_app():
                     color = [int(c) for c in COLORS[classIDs[i]]]
                     resultC = car_color_classifier.predict(image[max(y, 0):y + h, max(x, 0):x + w])
                     resultM = car_make_classifier.predict(image[max(y, 0):y + h, max(x, 0):x + w])
-		    resultT = car_type_classifier.predict(image[max(y, 0):y + h, max(x, 0):x + w])
+                    resultT = car_type_classifier.predict(image[max(y, 0):y + h, max(x, 0):x + w])
                     textC = "{}: {:.4f}".format(resultC[0]['color'], float(resultC[0]['prob']))
                     textM = "{}: {:.4f}".format(resultM[0]['brand'], float(resultM[0]['prob']))
 		    textT = "{}: {:.4f}".format(resultT[0]['model'], float(resultT[0]['prob']))
