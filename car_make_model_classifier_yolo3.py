@@ -168,7 +168,7 @@ def run_the_app():
                     textT = "{}: {:.4f}".format(resultT[0]['model'], float(resultT[0]['prob']))
                     cv2.putText(image, textC, (x + 2, y + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
                     cv2.putText(image, textM, (x + 2, y + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
-		    cv2.putText(image, textT, (x + 2, y + 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+                    cv2.putText(image, textT, (x + 2, y + 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
                 cv2.rectangle(image, (x, y), (x + w, y + h), color, 2)
                 textL = "{}: {:.4f}".format(LABELS[classIDs[i]], confidences[i])
                 cv2.putText(image, textL, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
