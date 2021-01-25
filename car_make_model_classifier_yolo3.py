@@ -158,8 +158,8 @@ def run_the_app():
             for i in idxs.flatten():
                 (x, y) = (boxes[i][0], boxes[i][1])
                 (w, h) = (boxes[i][2], boxes[i][3])
+                color = [int(c) for c in COLORS[classIDs[i]]]
                 if classIDs[i] == 2 or classIDs[i] == 7:
-                    color = [int(c) for c in COLORS[classIDs[i]]]
                     resultC = car_color_classifier.predict(image[max(y, 0):y + h, max(x, 0):x + w])
                     resultM = car_make_classifier.predict(image[max(y, 0):y + h, max(x, 0):x + w])
                     resultT = car_type_classifier.predict(image[max(y, 0):y + h, max(x, 0):x + w])
