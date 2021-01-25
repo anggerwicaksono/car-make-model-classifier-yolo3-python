@@ -87,7 +87,7 @@ def download_file(file_path):
             progress_bar.empty()
 
 def run_the_app():
-    uf = st.sidebar.file_uploader("Upload an image", type=["jpg", "jpeg", "png", "webp"])
+    uf = st.sidebar.file_uploader("Upload an image", type=["jpg", "jpeg"])
     st.sidebar.write("""
     [[Open in Github]](https://github.com/anggerwicaksono/car-make-model-classifier-yolo3-python)
     """)
