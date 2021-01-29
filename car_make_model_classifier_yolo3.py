@@ -97,7 +97,12 @@ def run_the_app():
         st.image(uf, caption="Uploaded Image", use_column_width=True)
         with open(uf.name, 'wb') as f:
             f.write(uf.read())
-            st.spinner("Processing Image ...")
+            st.write("Processing Image ...")
+            mybar = st.progress(0)
+            for percent_complete in range(100):
+                time.sleep(0.1)
+                mybar.progress(percent_complete + 1)
+            
 
     car_color_classifier = color_classifier.Classifier()
     car_make_classifier = make_classifier.Classifier()
