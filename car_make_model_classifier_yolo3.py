@@ -180,7 +180,7 @@ def run_the_app():
 
         st.image(image, caption='Processed Image.', use_column_width=True, channels='BGR')
         end = time.time()
-        st.write("Time took {:.6f} seconds".format(end - start))
+        st.success("Time took {:.6f} seconds".format(end - start))
 # External files to download.
 EXTERNAL_DEPENDENCIES = {
     "yolov4.weights": {
