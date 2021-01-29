@@ -27,9 +27,7 @@ def main():
     # Render the readme as markdown using st.markdown.
     st.write("""
     # CBMCD Car Brand, Model and Color Detection
-    Implementation of AI Object Detection using YOLOv4
-    
-    (OpenCV2 DNN and MNN backend) on Streamlit
+    Implementation of AI Object Detection using YOLOv4 on Streamlit
     
     code forked from :
     
