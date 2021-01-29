@@ -157,7 +157,7 @@ def run_the_app():
                 (x, y) = (boxes[i][0], boxes[i][1])
                 (w, h) = (boxes[i][2], boxes[i][3])
                 color = [int(c) for c in COLORS[classIDs[i]]]
-                if classIDs[i] == 2:
+                if classIDs[i] == 2 or classIDs[i] == 7:
                     resultC = car_color_classifier.predict(image[max(y, 0):y + h, max(x, 0):x + w])
                     resultM = car_make_classifier.predict(image[max(y, 0):y + h, max(x, 0):x + w])
                     resultT = car_type_classifier.predict(image[max(y, 0):y + h, max(x, 0):x + w])
