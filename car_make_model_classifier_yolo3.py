@@ -97,7 +97,7 @@ def run_the_app():
         st.image(uf, caption="Uploaded Image", use_column_width=True)
         with open(uf.name, 'wb') as f:
             f.write(uf.read())
-            st.write("Processing Image ...")
+            st.spinner("Processing Image ...")
 
     car_color_classifier = color_classifier.Classifier()
     car_make_classifier = make_classifier.Classifier()
